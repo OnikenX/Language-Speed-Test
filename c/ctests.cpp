@@ -18,11 +18,17 @@ std::vector<int> primenumbers(int max = 1000) {
       primes.push_back(actual);
     ++actual;
   }
+
   return primes;
 }
 
 int main() {
-  auto primes = primenumbers();
-  //for (int d = 0; d < primes.size(); ++d)
-    //std::cout << primes[d] << std::endl;
+  // auto primes = primenumbers(5);
+  // for (int d = 0; d < primes.size(); ++d)
+  // std::cout << primes[d] << std::endl;
+  try {
+    std::cout << 2 / 0 << std::endl;
+  } catch (...) {
+    std::cout << "Ocurreu um erro." << std::endl;
+  }
 }

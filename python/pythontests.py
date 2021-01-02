@@ -1,4 +1,4 @@
-def primenumbers(max: int = 1000):
+def primenumbers(max: int = 100000):
     primes = [1,2]
     actual = 3
     while actual < max:
